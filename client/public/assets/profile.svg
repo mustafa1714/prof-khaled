@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="600" viewBox="0 0 520 600" role="img" aria-label="Professor portrait placeholder">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#16335a"/>
+      <stop offset="1" stop-color="#1d4070"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.35" r="0.7">
+      <stop offset="0" stop-color="#c9a24b" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#c9a24b" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="520" height="600" rx="18" fill="url(#bg)"/>
+  <rect width="520" height="600" rx="18" fill="url(#glow)"/>
+  <circle cx="260" cy="232" r="96" fill="#ffffff" opacity="0.10"/>
+  <g fill="#ffffff" opacity="0.9">
+    <circle cx="260" cy="200" r="52"/>
+    <path d="M150 400c0-62 49-104 110-104s110 42 110 104v40H150z"/>
+  </g>
+  <circle cx="260" cy="232" r="116" fill="none" stroke="#c9a24b" stroke-width="3" opacity="0.7"/>
+  <text x="260" y="540" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="22" fill="#e3c885">Portrait Placeholder</text>
+  <text x="260" y="566" text-anchor="middle" font-family="Georgia, serif" font-size="13" fill="#aebccc">Replace assets/profile.svg with a photo</text>
+</svg>

@@ -1,0 +1,36 @@
+# dependencies
+node_modules/
+
+# build outputs
+dist/
+.next/
+out/
+build/
+
+# testing
+coverage/
+
+# environment
+.env*
+!.env.example
+
+# misc
+.DS_Store
+*.pem
+*.tsbuildinfo
+next-env.d.ts
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# vercel
+.vercel
+
+# sanity
+.sanity/
+
+# opencode agent skills
+.agents/

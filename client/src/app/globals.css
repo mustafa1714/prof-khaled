@@ -1,0 +1,313 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+/* ========== Custom variant for class-based dark mode ========== */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* ========== Theme tokens ========== */
+@theme inline {
+  --color-navy: #10243f;
+  --color-navy-2: #16335a;
+  --color-navy-3: #1d4070;
+  --color-gold: #c69a3f;
+  --color-gold-soft: #e3c885;
+  --color-ink: var(--ink);
+  --color-muted: var(--muted-clr);
+  --color-line: var(--line-clr);
+  --color-bg: var(--bg-clr);
+  --color-bg-alt: var(--bg-alt-clr);
+  --color-card-bg: var(--card-bg-clr);
+  --color-success: var(--success-clr);
+  --color-error: var(--error-clr);
+
+  --font-display: "Playfair Display", "Amiri", Georgia, serif;
+  --font-body: "Inter", system-ui, sans-serif;
+  --font-rtl: "Cairo", "Amiri", serif;
+  --font-heading: var(--font-sans);
+  --font-sans: var(--font-sans);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar: var(--sidebar);
+  --color-chart-5: var(--chart-5);
+  --color-chart-4: var(--chart-4);
+  --color-chart-3: var(--chart-3);
+  --color-chart-2: var(--chart-2);
+  --color-chart-1: var(--chart-1);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --color-foreground: var(--foreground);
+  --color-background: var(--background);
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+  --radius-3xl: calc(var(--radius) * 2.2);
+  --radius-4xl: calc(var(--radius) * 2.6);
+}
+
+/* ========== CSS variables for light mode ========== */
+:root {
+  /* Brand surface tokens */
+  --ink: #202a38;
+  --muted-clr: #5d6b7d;
+  --line-clr: #e4e9f1;
+  --bg-clr: #f6f4ef;
+  --bg-alt-clr: #efece4;
+  --card-bg-clr: #ffffff;
+  --success-clr: #16a34a;
+  --error-clr: #dc2626;
+
+  /* shadcn primitives — remapped to brand */
+  --card: #ffffff;
+  --card-foreground: #202a38;
+  --primary: #10243f;
+  --primary-foreground: #ffffff;
+  --secondary: #efece4;
+  --secondary-foreground: #10243f;
+  --muted: #f6f4ef;
+  --muted-foreground: #5d6b7d;
+  --border: #e4e9f1;
+  --input: #e4e9f1;
+  --ring: #c69a3f;
+  --radius: 0.625rem;
+
+  --header-bg: rgba(246, 244, 239, 0.86);
+  --shadow-card: 0 6px 18px rgba(16, 36, 63, 0.07);
+  --shadow-lg: 0 14px 40px rgba(16, 36, 63, 0.10);
+  --background: #f6f4ef;
+  --foreground: #202a38;
+  --popover: #ffffff;
+  --popover-foreground: #202a38;
+  --accent: #efece4;
+  --accent-foreground: #10243f;
+  --destructive: #dc2626;
+  --chart-1: #10243f;
+  --chart-2: #1d4070;
+  --chart-3: #c69a3f;
+  --chart-4: #5d6b7d;
+  --chart-5: #e4e9f1;
+  --sidebar: #f6f4ef;
+  --sidebar-foreground: #202a38;
+  --sidebar-primary: #10243f;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #efece4;
+  --sidebar-accent-foreground: #10243f;
+  --sidebar-border: #e4e9f1;
+  --sidebar-ring: #c69a3f;
+}
+
+/* ========== Dark mode tokens ========== */
+.dark {
+  /* Brand surface tokens — dark overrides */
+  --ink: #e2e4e9;
+  --muted-clr: #94a3b8;
+  --line-clr: rgba(255, 255, 255, 0.12);
+  --bg-clr: #0d1622;
+  --bg-alt-clr: #141f2f;
+  --card-bg-clr: #1a2536;
+  --success-clr: #4ade80;
+  --error-clr: #f87171;
+
+  /* shadcn primitives — dark brand mapping */
+  --card: #1a2536;
+  --card-foreground: #e2e4e9;
+  --primary: #c69a3f;
+  --primary-foreground: #10243f;
+  --secondary: #1a2536;
+  --secondary-foreground: #e2e4e9;
+  --muted: #141f2f;
+  --muted-foreground: #94a3b8;
+  --border: rgba(255, 255, 255, 0.12);
+  --input: rgba(255, 255, 255, 0.15);
+  --ring: #c69a3f;
+
+  --header-bg: rgba(13, 22, 34, 0.86);
+  --shadow-card: 0 6px 18px rgba(0, 0, 0, 0.35);
+  --shadow-lg: 0 14px 40px rgba(0, 0, 0, 0.45);
+  --background: #0d1622;
+  --foreground: #e2e4e9;
+  --popover: #1a2536;
+  --popover-foreground: #e2e4e9;
+  --accent: #141f2f;
+  --accent-foreground: #e2e4e9;
+  --destructive: #f87171;
+  --chart-1: #c69a3f;
+  --chart-2: #e3c885;
+  --chart-3: #1d4070;
+  --chart-4: #94a3b8;
+  --chart-5: #1a2536;
+  --sidebar: #0d1622;
+  --sidebar-foreground: #e2e4e9;
+  --sidebar-primary: #c69a3f;
+  --sidebar-primary-foreground: #10243f;
+  --sidebar-accent: #141f2f;
+  --sidebar-accent-foreground: #e2e4e9;
+  --sidebar-border: rgba(255, 255, 255, 0.12);
+  --sidebar-ring: #c69a3f;
+}
+
+/* ========== Surface context tokens ========== */
+/*
+ * Sections with dark backgrounds use .surface-dark to override the
+ * theme-level foreground tokens. All child components then automatically
+ * receive correct text colors via standard Tailwind utilities
+ * (text-foreground, text-muted-foreground, etc.) without any
+ * component-level overrides.
+ */
+.surface-dark {
+  --foreground: #ffffff;
+  --muted-foreground: #cdd8e6;
+  --accent-foreground: #e3c885;
+  --card-foreground: #ffffff;
+  --popover-foreground: #ffffff;
+  --secondary-foreground: #ffffff;
+  color: var(--foreground);
+}
+
+/* ========== Base styles (inside @layer so Tailwind utilities can override) ========== */
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: var(--font-body);
+    line-height: 1.75;
+    -webkit-font-smoothing: antialiased;
+    transition: background 0.3s, color 0.3s;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: var(--font-display);
+    line-height: 1.25;
+    font-weight: 700;
+    color: var(--foreground);
+    text-wrap: balance;
+  }
+
+  [dir="rtl"] body {
+    font-family: var(--font-rtl);
+  }
+
+  [dir="rtl"] h1, [dir="rtl"] h2, [dir="rtl"] h3, [dir="rtl"] h4 {
+    font-family: var(--font-rtl);
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  /* Skip to content */
+  .skip-link {
+    position: absolute;
+    top: -100%;
+    left: 0;
+    z-index: 9999;
+    padding: 0.75rem 1.5rem;
+    background: var(--color-navy);
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+    transition: top 0.2s;
+  }
+  .skip-link:focus {
+    top: 0;
+  }
+
+  /* Focus visible */
+  :focus-visible {
+    outline: 2px solid var(--color-gold);
+    outline-offset: 2px;
+  }
+  :focus:not(:focus-visible) {
+    outline: none;
+  }
+
+  /* Scroll reveal */
+  .reveal {
+    opacity: 0;
+    transform: translateY(26px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+  .reveal.in {
+    opacity: 1;
+    transform: none;
+  }
+
+  /* Form state utilities */
+  .form-success {
+    background: color-mix(in srgb, var(--success-clr) 12%, transparent);
+    color: var(--success-clr);
+  }
+  .form-error {
+    background: color-mix(in srgb, var(--error-clr) 12%, transparent);
+    color: var(--error-clr);
+  }
+
+  /* RTL-aware hover translate */
+  .hover-translate-x {
+    transition: transform 0.2s ease;
+  }
+  .hover-translate-x:hover {
+    transform: translateX(4px);
+  }
+  [dir="rtl"] .hover-translate-x:hover {
+    transform: translateX(-4px);
+  }
+
+  /* Tailwind layer defaults */
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  html {
+    @apply font-sans;
+  }
+}
+
+/* ========== Animations (outside layers for proper keyframe registration) ========== */
+@keyframes pulse-live {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; }
+}
+
+/* ========== Reduced motion ========== */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}

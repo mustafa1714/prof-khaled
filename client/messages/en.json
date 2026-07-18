@@ -1,0 +1,134 @@
+{
+  "site": { "name": "Prof. Khaled", "title": "University Professor & Academic Researcher" },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "books": "Books & Lectures",
+    "seminars": "Seminars",
+    "contact": "Contact"
+  },
+  "footer": {
+    "tagline": "A university professor and academic researcher devoted to knowledge and scholarship.",
+    "quick": "Quick Links",
+    "contact": "Contact",
+    "rights": "All rights reserved",
+    "backToTop": "Back to top"
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Prof. Khaled",
+      "title": "A Scholar and Academic Researcher in the Service of Knowledge",
+      "subtitle": "Over three decades of academic dedication in teaching, research, and authorship \u2014 committed to spreading knowledge and mentoring a new generation of researchers.",
+      "cta1": "Explore My Books",
+      "cta2": "Get in Touch"
+    },
+    "stats": {
+      "books": "Publications",
+      "lectures": "Lectures",
+      "seminars": "Seminars & Conferences",
+      "years": "Years of Experience"
+    },
+    "about": {
+      "eyebrow": "Who I Am",
+      "title": "A Brief Introduction",
+      "text": "Prof. Khaled is a seasoned university professor and researcher with significant contributions to his field through authorship, lectures, and scientific seminars. He blends academic depth with clear presentation and is dedicated to developing students\u2019 research skills.",
+      "more": "Read the full CV"
+    },
+    "books": {
+      "title": "Latest Publications & Lectures",
+      "subtitle": "Selected books and lectures you can read and download directly.",
+      "all": "All Books & Lectures"
+    },
+    "seminars": {
+      "title": "Seminars & Conferences I Joined",
+      "subtitle": "Links to the scholarly events I contributed to locally and internationally.",
+      "all": "All Seminars"
+    },
+    "cta": {
+      "title": "Let\u2019s Connect",
+      "text": "I am happy to respond to your academic and research inquiries and to exchange knowledge.",
+      "button": "Contact Page"
+    }
+  },
+  "about": {
+    "hero": { "eyebrow": "Curriculum Vitae", "title": "Prof. Khaled" },
+    "bio": { "title": "Biography" },
+    "qual": { "title": "Academic Qualifications" },
+    "exp": { "title": "Academic Experience" },
+    "research": { "title": "Research Interests" },
+    "cv": {
+      "title": "Full Curriculum Vitae",
+      "text": "You can read the complete CV and its details, or download it as a PDF.",
+      "read": "Read the CV",
+      "download": "Download PDF"
+    }
+  },
+  "books": {
+    "hero": {
+      "eyebrow": "Scholarly Library",
+      "title": "Books & Lectures",
+      "subtitle": "Authored books and lectures, available to read on the site or download."
+    },
+    "read": "Read Online",
+    "download": "Download",
+    "type": { "book": "Book", "lecture": "Lecture" },
+    "empty": "No items available yet."
+  },
+  "seminars": {
+    "hero": {
+      "eyebrow": "Scholarly Activity",
+      "title": "Seminars & Conferences",
+      "subtitle": "Events I participated in, with their online links."
+    },
+    "visit": "Visit Link",
+    "live": "Live",
+    "empty": "No seminars or conferences available yet.",
+    "types": {
+      "conference": "Conference",
+      "seminar": "Seminar",
+      "workshop": "Workshop",
+      "forum": "Forum",
+      "lecture": "Lecture"
+    }
+  },
+  "contact": {
+    "hero": {
+      "eyebrow": "Get in Touch",
+      "title": "Contact the Professor",
+      "subtitle": "All contact details are listed below; I am glad to answer your inquiries."
+    },
+    "info": { "title": "Contact Details" },
+    "form": {
+      "title": "Send a Message",
+      "name": "Full Name",
+      "email": "Email",
+      "subject": "Subject",
+      "message": "Message",
+      "send": "Send Message",
+      "sent": "Thank you, your message was received.",
+      "required": "Please fill in the required fields.",
+      "invalidEmail": "Please enter a valid email address.",
+      "error": "An error occurred, please try again."
+    },
+    "email": "Email",
+    "phone": "Phone",
+    "office": "Office",
+    "address": "Address",
+    "hours": "Office Hours",
+    "social": "Academic Profiles",
+    "whatsapp": "Contact via WhatsApp"
+  },
+  "reader": { "close": "Close", "download": "Download", "noContent": "No content available" },
+  "loading": "Loading...",
+  "error": {
+    "title": "Oops",
+    "message": "Something went wrong. Please try again.",
+    "tryAgain": "Try Again",
+    "goHome": "Go Home"
+  },
+  "notfound": {
+    "title": "Page Not Found",
+    "text": "Sorry, the page you are looking for is not available.",
+    "back": "Back to Home"
+  }
+}

@@ -1,0 +1,22 @@
+# dependencies
+node_modules/
+
+# build outputs
+dist/
+build/
+
+# misc
+.DS_Store
+*.pem
+*.tsbuildinfo
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# vercel
+.vercel
+
+# sanity
+.sanity/
