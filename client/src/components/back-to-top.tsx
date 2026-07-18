@@ -17,7 +17,7 @@ export function BackToTop() {
   return (
     <button
       onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-      className="fixed bottom-7 end-7 z-[60] flex size-[46px] items-center justify-center rounded-full bg-navy text-white shadow-lg transition-all hover:bg-gold hover:text-[#2a1f05] animate-in fade-in slide-in-from-bottom-2"
+      className="fixed bottom-[88px] end-7 z-[60] flex size-[44px] items-center justify-center rounded-full bg-navy text-white shadow-lg transition-all hover:bg-gold hover:text-[#2a1f05] animate-in fade-in slide-in-from-bottom-2 sm:bottom-7"
       aria-label="Back to top"
     >
       <ArrowUp className="size-5" />

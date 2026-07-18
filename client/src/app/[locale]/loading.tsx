@@ -52,7 +52,7 @@ export default function Loading() {
           <Skeleton className="mx-auto mb-3 h-8 w-64" />
           <Skeleton className="mx-auto h-5 w-full max-w-md" />
         </div>
-        <div className="mt-11 grid gap-6 [grid-template-columns:repeat(auto-fill,minmax(290px,1fr))]">
+        <div className="mt-11 grid gap-6 [grid-template-columns:repeat(auto-fill,minmax(min(290px,100%),1fr))]">
           {[1, 2, 3].map((i) => (
             <div key={i} className="overflow-hidden rounded-2xl border border-line bg-card">
               <Skeleton className="h-[200px] w-full rounded-t-2xl" />

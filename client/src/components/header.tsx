@@ -39,14 +39,14 @@ export function Header() {
       }`}
       style={{ background: "var(--header-bg)", backdropFilter: "blur(12px)" }}
     >
-      <div className="mx-auto flex h-[74px] max-w-[1160px] items-center gap-5 px-5">
-        <Link href="/" className="flex items-center gap-3">
+      <div className="mx-auto flex h-[74px] max-w-[1160px] items-center gap-3 px-3 sm:gap-5 sm:px-5">
+        <Link href="/" className="flex min-w-0 items-center gap-2.5 sm:gap-3">
           <BrandMark isRtl={isRtl} />
-          <span className="flex flex-col leading-tight">
-            <span className="text-[17px] font-extrabold text-navy dark:text-foreground">
+          <span className="flex min-w-0 flex-col leading-tight">
+            <span className="truncate text-[15px] font-extrabold text-navy dark:text-foreground sm:text-[17px]">
               {tSite("name")}
             </span>
-            <span className="text-xs text-muted">{tSite("title")}</span>
+            <span className="hidden truncate text-xs text-muted min-[375px]:block">{tSite("title")}</span>
           </span>
         </Link>
 
@@ -70,7 +70,7 @@ export function Header() {
           })}
         </nav>
 
-        <div className="flex items-center gap-3">
+        <div className="flex shrink-0 items-center gap-2 sm:gap-3">
           <ThemeToggle />
           <LanguageSwitch />
 

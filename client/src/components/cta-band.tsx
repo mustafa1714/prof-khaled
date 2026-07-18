@@ -27,7 +27,7 @@ export function CtaBand({ title, text, buttonText }: Props) {
             <span className="inline-block size-2 rounded-full bg-gold" />
             <span className="text-[13px] font-semibold uppercase tracking-widest text-gold/80">{t("title")}</span>
           </div>
-          <h2 className="mb-2 font-display text-[28px] text-white">
+          <h2 className="mb-2 font-display text-[clamp(22px,5vw,28px)] text-white">
             {title || t("title")}
           </h2>
           <p className="max-w-[520px] text-muted-foreground">

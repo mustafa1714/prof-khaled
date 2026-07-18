@@ -68,7 +68,7 @@ export default async function ContactPage({ params }: PageProps) {
         />
 
         <ScrollReveal>
-          <section className="py-[72px]">
+          <section className="py-12 md:py-[72px]">
             <div className="mx-auto grid max-w-[1160px] gap-11 px-5 md:grid-cols-2 md:items-start">
               <div>
                 <h2 className="mb-5 text-[24px] font-bold text-navy dark:text-gold-soft">

@@ -98,7 +98,7 @@ export function Hero({ settings: s, publicationsCount, eventsCount }: HeroProps)
         {stats.map((stat, i) => (
           <div
             key={i}
-            className="rounded-2xl border border-white/14 bg-white/8 p-6 text-center backdrop-blur-sm transition-transform hover:-translate-y-1"
+            className="rounded-2xl border border-white/14 bg-white/8 p-4 text-center backdrop-blur-sm transition-transform hover:-translate-y-1 md:p-6"
           >
             <span className="mb-1 block font-display text-[36px] font-extrabold text-gold-soft">
               {stat.value}

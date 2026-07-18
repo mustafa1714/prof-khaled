@@ -129,7 +129,7 @@ function ReaderDialog({
             <X className="size-4" />
           </button>
         </div>
-        <div className="overflow-y-auto px-8 py-7">
+        <div className="overflow-y-auto px-5 py-5 sm:px-8 sm:py-7">
           {loading ? (
             <div className="flex items-center justify-center py-12">
               <div className="size-8 animate-spin rounded-full border-4 border-gold border-t-transparent" />

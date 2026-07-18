@@ -52,9 +52,18 @@ export default async function LocaleLayout({ children, params }: Props) {
       dir={dir}
       data-scroll-behavior="smooth"
       suppressHydrationWarning
+      style={{ viewportFit: "cover" } as React.CSSProperties}
       className={`${inter.variable} ${cairo.variable} ${playfair.variable} ${amiri.variable}`}
     >
-      <body className="min-h-screen antialiased">
+      <body
+        className="min-h-screen antialiased"
+        style={{
+          paddingTop: "env(safe-area-inset-top)",
+          paddingBottom: "env(safe-area-inset-bottom)",
+          paddingLeft: "env(safe-area-inset-left)",
+          paddingRight: "env(safe-area-inset-right)",
+        }}
+      >
         <a href="#main-content" className="skip-link">
           Skip to content
         </a>

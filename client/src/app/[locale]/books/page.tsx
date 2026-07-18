@@ -90,10 +90,10 @@ export default async function BooksPage({ params }: PageProps) {
         />
 
         <ScrollReveal>
-          <section className="py-[72px]">
+          <section className="py-12 md:py-[72px]">
             <div className="mx-auto max-w-[1160px] px-5">
               {publications?.length ? (
-                <div className="grid gap-6 [grid-template-columns:repeat(auto-fill,minmax(290px,1fr))]">
+                <div className="grid gap-6 [grid-template-columns:repeat(auto-fill,minmax(min(290px,100%),1fr))]">
                   {publications.map((pub) => (
                     <PublicationCard key={pub._id} pub={pub} />
                   ))}

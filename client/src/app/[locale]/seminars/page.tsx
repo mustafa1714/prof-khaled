@@ -92,7 +92,7 @@ export default async function SeminarsPage({ params }: PageProps) {
         />
 
         <ScrollReveal>
-          <section className="py-[72px]">
+          <section className="py-12 md:py-[72px]">
             <div className="mx-auto max-w-[1160px] px-5">
               <div className="mx-auto flex max-w-[880px] flex-col gap-4">
                 {events?.length ? (

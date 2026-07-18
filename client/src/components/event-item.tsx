@@ -22,8 +22,8 @@ export function EventItem({ event }: { event: Event }) {
   const url = event.externalUrl || event.recordingUrl || "#";
 
   return (
-    <div className="flex items-center justify-between gap-5 rounded-2xl border border-line bg-card p-5 shadow-sm transition-all hover:-translate-y-0.75 hover:border-gold">
-      <div className="flex-1">
+    <div className="flex flex-col gap-4 rounded-2xl border border-line bg-card p-5 shadow-sm transition-all hover:-translate-y-0.75 hover:border-gold sm:flex-row sm:items-center sm:justify-between sm:gap-5">
+      <div className="min-w-0 flex-1">
         <span className="mb-2 inline-block rounded-full bg-bg-alt px-3 py-0.5 text-[12px] font-bold text-navy-3 dark:text-gold-soft">
           {typeLabel}
           {event.isLive && (

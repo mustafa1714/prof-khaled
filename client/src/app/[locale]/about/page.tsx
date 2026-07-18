@@ -85,7 +85,7 @@ export default async function AboutPage({ params }: PageProps) {
         <PageHero eyebrow={t("hero.eyebrow")} title={t("hero.title")} />
 
         <ScrollReveal>
-          <section className="py-[72px]">
+          <section className="py-12 md:py-[72px]">
             <div className="mx-auto grid max-w-[1160px] gap-11 px-5 md:grid-cols-[1.5fr_1fr] md:items-start">
               <div>
                 {cv?.bio && (
@@ -158,7 +158,7 @@ export default async function AboutPage({ params }: PageProps) {
                 )}
               </div>
 
-              <div className="sticky top-[94px] rounded-2xl border border-line bg-card p-7 shadow-lg">
+              <div className="sticky top-20 rounded-2xl border border-line bg-card p-7 shadow-lg">
                 <h2 className="mb-2.5 text-[22px] font-bold text-navy dark:text-gold-soft">
                   {t("cv.title")}
                 </h2>

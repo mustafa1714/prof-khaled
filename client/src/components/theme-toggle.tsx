@@ -14,9 +14,9 @@ export function ThemeToggle() {
   }, []);
 
   if (!mounted) {
-    return (
+      return (
       <button
-        className="inline-flex size-10 items-center justify-center rounded-full border border-line bg-bg-alt"
+        className="inline-flex size-11 items-center justify-center rounded-full border border-line bg-bg-alt"
         disabled
         aria-label="Toggle theme"
       />
@@ -26,7 +26,7 @@ export function ThemeToggle() {
   return (
     <button
       onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}
-      className="inline-flex size-10 items-center justify-center rounded-full border border-line bg-bg-alt text-foreground transition-all hover:border-gold hover:-rotate-12"
+      className="inline-flex size-11 items-center justify-center rounded-full border border-line bg-bg-alt text-foreground transition-all hover:border-gold hover:-rotate-12"
       aria-label="Toggle theme"
     >
       {resolvedTheme === "dark" ? <Sun className="size-[17px]" /> : <Moon className="size-[17px]" />}

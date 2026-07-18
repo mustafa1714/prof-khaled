@@ -16,7 +16,7 @@ export function AboutPreview({ eyebrow, title, text, moreText }: Props) {
 
   return (
     <ScrollReveal>
-      <section className="py-[72px]">
+      <section className="py-12 md:py-[72px]">
         <div className="mx-auto max-w-[760px] px-5 text-center">
           <span className="mb-2.5 inline-block text-[13px] font-bold uppercase tracking-[2px] text-gold">
             {eyebrow || t("eyebrow")}

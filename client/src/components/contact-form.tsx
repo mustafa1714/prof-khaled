@@ -96,7 +96,7 @@ export function ContactForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="rounded-2xl border border-line bg-card p-7 shadow-sm" noValidate>
+    <form onSubmit={handleSubmit} className="rounded-2xl border border-line bg-card p-5 shadow-sm sm:p-7" noValidate>
       <h2 className="mb-5 text-[24px] font-bold text-navy dark:text-gold-soft">{t("title")}</h2>
 
       <div className="mb-4 flex flex-col gap-1.5">

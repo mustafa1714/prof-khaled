@@ -76,8 +76,8 @@ export async function Footer({ email, phone, office, socialLinks }: FooterProps)
         </div>
       </div>
       <div className="mt-10 border-t border-white/10 px-5 py-4">
-        <div className="mx-auto flex max-w-[1160px] items-center justify-between text-[13px] text-muted-foreground/60">
-          <span>© {new Date().getFullYear()} {t("site.name")} — {t("footer.rights")}</span>
+        <div className="mx-auto flex max-w-[1160px] flex-col items-center gap-2 text-[13px] text-muted-foreground/60 sm:flex-row sm:justify-between">
+          <span className="text-center sm:text-start">© {new Date().getFullYear()} {t("site.name")} — {t("footer.rights")}</span>
           <FooterBackToTop />
         </div>
       </div>

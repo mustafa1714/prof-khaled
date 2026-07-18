@@ -23,7 +23,7 @@ export function LanguageSwitch() {
           onClick={() => router.replace(pathname, { locale: loc })}
           aria-label={`${labels[loc]}${locale === loc ? " (current)" : ""}`}
           aria-pressed={locale === loc}
-          className={`rounded-full px-3 py-2 text-xs font-semibold transition-all min-h-[32px] min-w-[32px] ${
+          className={`whitespace-nowrap rounded-full px-3 py-2 text-xs font-semibold transition-all min-h-[32px] min-w-[32px] ${
             locale === loc
               ? "bg-navy text-white"
               : "text-muted hover:text-foreground"

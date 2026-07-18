@@ -284,6 +284,7 @@
   }
   html {
     @apply font-sans;
+    overflow-x: hidden;
   }
 }
 

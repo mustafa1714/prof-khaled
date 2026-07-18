@@ -99,7 +99,7 @@ export default async function HomePage({ params }: PageProps) {
         />
 
         <ScrollReveal>
-          <section className="bg-bg-alt py-[72px]">
+          <section className="bg-bg-alt py-12 md:py-[72px]">
             <div className="mx-auto max-w-[1160px] px-5">
               <div className="mx-auto mb-11 max-w-[680px] text-center">
                 <h2 className="mb-2.5 font-display text-[clamp(24px,3vw,36px)] text-navy dark:text-gold-soft">
@@ -109,7 +109,7 @@ export default async function HomePage({ params }: PageProps) {
                   {settings?.homeBooksSubtitle || t("books.subtitle")}
                 </p>
               </div>
-              <div className="grid gap-6 [grid-template-columns:repeat(auto-fill,minmax(290px,1fr))]">
+              <div className="grid gap-6 [grid-template-columns:repeat(auto-fill,minmax(min(290px,100%),1fr))]">
                 {pubs.map((pub) => (
                   <PublicationCard key={pub._id} pub={pub} />
                 ))}
@@ -127,7 +127,7 @@ export default async function HomePage({ params }: PageProps) {
         </ScrollReveal>
 
         <ScrollReveal>
-          <section className="py-[72px]">
+          <section className="py-12 md:py-[72px]">
             <div className="mx-auto max-w-[1160px] px-5">
               <div className="mx-auto mb-11 max-w-[680px] text-center">
                 <h2 className="mb-2.5 font-display text-[clamp(24px,3vw,36px)] text-navy dark:text-gold-soft">
